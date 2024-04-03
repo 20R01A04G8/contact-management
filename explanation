@@ -1,0 +1,25 @@
+1. *Customer Data Storage*: Instead of using a database, the code utilizes a Python list named customers to store customer information. Each customer's details are stored as a dictionary within this list.
+
+2. *add_customer Function*:
+   - This function takes three parameters: name, email, and phone, representing the details of a new customer.
+   - It creates a dictionary named customer containing the provided details.
+   - The dictionary is then appended to the customers list.
+   - Finally, it prints a message confirming the successful addition of the customer.
+
+3. *view_customers Function*:
+   - This function iterates over the customers list and prints the details of each customer.
+   - It uses enumerate to get both the index and the customer dictionary.
+   - For each customer, it prints their name, email, and phone number.
+
+4. *Main Menu Loop*:
+   - The program enters a while loop that displays the main menu options until the user chooses to exit.
+   - The menu options are presented using print statements.
+   - The user's choice is obtained using the input function.
+   - Depending on the user's choice, the program calls the appropriate function (add_customer, view_customers) or exits the loop.
+
+5. *Menu Options*:
+   - *Add Customer*: Prompts the user to enter details for a new customer and calls the add_customer function to add them to the list.
+   - *View Customers*: Calls the view_customers function to display the details of all existing customers.
+   - *Exit*: Terminates the program.
+
+Overall, this code provides a basic Customer Management System that allows users to add new customers, view existing customers, and exit the program, all through a simple command-line interface.
